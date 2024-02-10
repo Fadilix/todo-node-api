@@ -116,6 +116,7 @@ const getAllUsers = async (req, res) => {
     }
 }
 
+// get a user by id
 const getUserById = async (req, res) => {
     try {
         try {
