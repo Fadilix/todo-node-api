@@ -16,9 +16,9 @@ app.use(express.urlencoded({ extended: true }));
 // instance of the database connection
 const db = require("./models");
 const userController = require("./controllers/userController")
+
+
 // ------------- different routes --------------- //
-
-
 // welcome page
 app.get("/", (req, res) => {
     return res.json({ message: "Hello world!!!" });
