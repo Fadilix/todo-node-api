@@ -3,6 +3,7 @@ const cors = require("cors");
 
 const app = express();
 
+// for accessing the environment variables
 require("dotenv").config();
 const { env } = process;
 
