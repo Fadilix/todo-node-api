@@ -17,9 +17,11 @@ app.use(express.urlencoded({ extended: true }));
 // instance of the database connection
 const db = require("./models");
 const userController = require("./controllers/userController")
+const todosController = require("./controllers/todoController")
 
 
 // ------------- different routes --------------- //
+// ------------- user routes -------------------- //
 // welcome page
 app.get("/", (req, res) => {
     return res.json({ message: "Hello world!!!" });
@@ -42,6 +44,15 @@ app.get("/api/users", userController.getAllUsers);
 
 // get a user by id
 app.get("/api/users/:userId", userController.getUserById);
+
+
+
+// ------------- todo routes -------------------- //
+// get all todos
+app.get("/api/todos", todosController.getAllTodos);
+
+// add a todo
+app.post("/api/todos", todosController.addTodo);
 
 
 
