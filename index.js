@@ -16,6 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // instance of the database connection
 const db = require("./models");
+
+// using the controllers
 const userController = require("./controllers/userController")
 const todosController = require("./controllers/todoController")
 
@@ -53,6 +55,12 @@ app.get("/api/todos", todosController.getAllTodos);
 
 // add a todo
 app.post("/api/todos", todosController.addTodo);
+
+// numbers of todos
+app.get("/api/todos/num", todosController.getNumberOfTodos);
+
+// delete a task
+app.delete("/api/todos/:id", todosController.deleteTodo);
 
 
 
