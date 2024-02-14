@@ -49,7 +49,6 @@ const logUserIn = async (req, res) => {
 };
 
 
-
 // delete user
 const deleteUser = async (req, res) => {
     try {
@@ -67,7 +66,6 @@ const deleteUser = async (req, res) => {
         res.status(500).json({ message: 'Internal server error' });
     }
 }
-
 
 // edit user
 const editUser = async (req, res) => {
