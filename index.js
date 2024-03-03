@@ -13,7 +13,6 @@ app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
-
 // instance of the database connection
 const db = require("./models");
 
