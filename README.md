@@ -16,13 +16,13 @@ This is a simple Express.js application with CRUD operations for users and todos
 ## Installation
 - Clone the repository:
   ```bash
-   git clone https://github.com/your-username/your-repo.git
+    gh repo clone Fadilix/todo-node-api
   ```
 
 
 - Install dependencies:
   ```bash
-  cd your-repo
+  cd todo-node-api
   npm install
   ```
 
@@ -141,4 +141,30 @@ This is a simple Express.js application with CRUD operations for users and todos
 ### Database
 This app uses Sequelize as the ORM and Postgresql as the database. The database connection details can be configured in the `config.json` file. 
 
-    
+Make sure to populate the `config.json` file with your own data
+```
+{
+  "development": {
+    "username": "goes_here",
+    "password": "goes_here",
+    "database": "goes_here",
+    "host": "goes_here",
+    "dialect": "goes_here"
+  },
+  "test": {
+    "username": "goes_here",
+    "password": "goes_here",
+    "database": "goes_here",
+    "host": "goes_here",
+    "dialect": "goes_here"
+  },
+  "production": {
+    "username": "goes_here",
+    "password": "goes_here",
+    "database": "goes_here",
+    "host": "goes_here",
+    "dialect": "goes_here"
+  }
+}
+
+```
