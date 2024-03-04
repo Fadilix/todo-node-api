@@ -16,7 +16,7 @@ This is a simple Express.js application with CRUD operations for users and todos
 ## Installation
 - Clone the repository:
   ```bash
-    gh repo clone Fadilix/todo-node-api
+    https://github.com/Fadilix/todo-node-api.git
   ```
 
 
