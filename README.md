@@ -31,7 +31,7 @@ This is a simple Express.js application with CRUD operations for users and todos
 * **Welcome page** :
   - Endpoint :  `GET /`
   - Response:
-    ```
+    ```json
       { "message": "Hello world!!!" }
     ```
 
@@ -39,14 +39,14 @@ This is a simple Express.js application with CRUD operations for users and todos
 * **Add a user** :
   - Endpoint :  `POST /api/users/signup`
   - Request Body:
-    ```
+    ```json
       {
         "username": "example_user",
         "password": "example_password"
       }
     ```
   - Response:
-       ```
+       ```json
     { "message": "User added successfully" }
 
     ```
@@ -54,14 +54,14 @@ This is a simple Express.js application with CRUD operations for users and todos
 * **Log a user in** :
   - Endpoint :  `POST /api/users/login`
   - Request Body:
-    ```
+    ```json
       {
         "username": "example_user",
         "password": "example_password"
       }
     ```
   - Response:
-       ```
+       ```json
     { "message": "User logged in successfully" }
 
     ```
@@ -70,7 +70,7 @@ This is a simple Express.js application with CRUD operations for users and todos
   - Endpoint :  `DELETE /api/users/:userId`
   - Url example : `http://localhost/3000/api/users/3`
   - Response:
-       ```
+       ```json
     { "message": "User deleted successfully" }
 
     ```
@@ -78,14 +78,14 @@ This is a simple Express.js application with CRUD operations for users and todos
 * Edit a user :
   - Endpoint :  `PUT /api/users/edit/:userId`
   - Request Body:
-    ```
+    ```json
       {
         "username": "example_user",
         "password": "example_password"
       }
     ```
   - Response:
-       ```
+       ```json
     { "message": "User edited successfully" }
 
     ```
@@ -94,7 +94,7 @@ This is a simple Express.js application with CRUD operations for users and todos
 * Get all the users :
   - Endpoint :  `GET /api/users/edit/:userId`
   - Response:
-    ```
+    ```json
       [
         { "id": 1, "username": "user1" },
         { "id": 2, "username": "user2" },
@@ -108,21 +108,21 @@ This is a simple Express.js application with CRUD operations for users and todos
 * **Add a todo**:
   - Endpoint :  `POST /api/todos`
   - Request Body:
-    ```
+    ```json
      {
     "task": "New Task",
     "userId": 1
       }
     ```
   - Response:
-    ```
+    ```json
     { "message": "Todo added successfully" }
 
     ```
 * **Get all todos** :
   - Endpoint :  `GET /api/todos`
   - Response:
-    ```
+    ```json
        [
         { "id": 1, "task": "Task 1", "userId": 1 },
         { "id": 2, "task": "Task 2", "userId": 1 },
@@ -134,7 +134,7 @@ This is a simple Express.js application with CRUD operations for users and todos
 * **Delete a todo** :
   - Endpoint :  `DELETE /api/todos/:id`
   - Response:
-    ```
+    ```json
     { "message": "Todo deleted successfully" }
     ```
 
