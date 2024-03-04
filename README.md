@@ -142,7 +142,7 @@ This is a simple Express.js application with CRUD operations for users and todos
 This app uses Sequelize as the ORM and Postgresql as the database. The database connection details can be configured in the `config.json` file. 
 
 Make sure to populate the `config.json` file with your own data
-```
+```json
 {
   "development": {
     "username": "goes_here",
