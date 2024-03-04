@@ -1,7 +1,7 @@
 # Express Todo App
 
 This is a simple Express.js application with CRUD operations for users and todos. It uses Sequelize as the ORM for database operations.
-
+#### API used in [todo-react-app](https://github.com/Fadilix/todo-react-app)
 ## Table of Contents
 
 1. [Installation](#installation)
