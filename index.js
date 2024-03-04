@@ -35,7 +35,7 @@ app.post("/api/users/signup", userController.addUser);
 app.post("/api/users/login", userController.logUserIn);
 
 // delete a user
-app.delete("/api/users/delete", userController.deleteUser);
+app.delete("/api/users/:userId", userController.deleteUser);
 
 
 // edit a userr

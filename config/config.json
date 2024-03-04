@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "nextgen",
-    "database": "todoappfs",
-    "host": "localhost",
-    "dialect": "postgresql"
+    "username": "goes_here",
+    "password": "goes_here",
+    "database": "goes_here",
+    "host": "goes_here",
+    "dialect": "goes_here"
   },
   "test": {
-    "username": "postgres",
-    "password": "nextgen",
-    "database": "todoappfs",
-    "host": "localhost",
-    "dialect": "postgresql"
+    "username": "goes_here",
+    "password": "goes_here",
+    "database": "goes_here",
+    "host": "goes_here",
+    "dialect": "goes_here"
   },
   "production": {
-    "username": "postgres",
-    "password": "nextgen",
-    "database": "todoappfs",
-    "host": "localhost",
-    "dialect": "postgresql"
+    "username": "goes_here",
+    "password": "goes_here",
+    "database": "goes_here",
+    "host": "goes_here",
+    "dialect": "goes_here"
   }
 }
